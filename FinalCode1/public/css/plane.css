@@ -1,0 +1,134 @@
+.visually-hidden {
+border:0!important;
+clip:rect(0000)!important;
+height:1px!important;
+overflow:hidden!important;
+position:absolute!important;
+width:1px!important;
+margin:-1px!important;
+padding:0!important;
+}
+
+/* .plane {
+  background-color: yellow;
+  width: 20em;
+} */
+.field {
+  border-style: solid;
+  border-bottom: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+  width:auto;
+}
+fieldset {
+border:none;
+padding:0;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+.field {
+max-width:26em;
+margin-bottom:30px;
+}
+
+.field--inline {
+margin-bottom:0;
+display:inline-block;
+max-width:auto;
+}
+
+.field label,.field legend {
+font-size:1em;
+line-height:1.25;
+margin-bottom:5px;
+display:block;
+}
+
+
+.card, .card-body {
+  /* background-color: yellow; */
+/* margin-left: 50px;
+margin-right: 50px; */
+width: 100%;
+}
+.economyClass .field-legend,.firstClass .field-legend {
+font-weight:400;
+font-style:italic;
+
+}
+
+.plane-row {
+overflow:hidden;
+margin-bottom:10px;
+
+}
+
+.plane-seat {
+float:left;
+margin-right:5px;
+}
+
+.plane-seat--economyClass:nth-child(3) {
+margin-right:10px;
+}
+
+.plane-seat--firstClass:nth-child(2) {
+/* margin-right:30px; */
+}
+
+.plane-seat label {
+margin-bottom:0;
+background-color:#f5f5f5;
+position:relative;
+padding:10px;
+}
+
+.enhanced .plane-seat label {
+background:0 0;
+padding:0;
+}
+
+.enhanced .plane-seatNumber {
+border-radius:5px;
+
+border:2px solid #ddd;
+border-top:2px #f5f5f5;
+width:2.5em;
+text-align:center;
+display:block;
+background-color:#f5f5f5;
+margin:5px 0;
+padding:5px;
+}
+
+.enhanced .plane-seatNumber:hover {
+background-color:#ddd;
+border-color:#ddd;
+}
+
+.enhanced [type=checkbox]:focus+.plane-seatNumber {
+border:2px solid blue;
+
+}
+
+.enhanced [type=checkbox]:disabled+.plane-seatNumber {
+/* text-decoration:line-through; */
+background-color:#f5f5f5;
+color:#bbb;
+border-color:#f5f5f5;
+}
+
+/* plane checkbox style */
+.enhanced .plane-seat input {
+position:absolute;
+left:-9999em;
+}
+
+.enhanced [type=checkbox]:checked+.plane-seatNumber {
+background-color:#005ea5; /* color once clicked */
+color:#fff; /* Color of writing in box once clicked */
+border-color:#005ea5; /* color of border is same as bg color */
+}

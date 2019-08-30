@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+  <title>Select flight</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/progress.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  </head>
+    <body>
+      <header role="banner">
+        <div class="container-fullwidth">
+          <a href="#main" class="skip" role="link" aria-label="skip to main content">Skip to main content</a>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark" role="navigation">
+                 <a class="btn" href="index.html" role="button"></i>HOME</a>
+                  <button class="navbar-toggler" aria-controls="navbar" type="button" data-toggle="collapse" data-target="#navbar3">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                      <div class="navbar-collapse collapse" id="navbar3">
+                         <ul class="navbar-nav">
+                             <li class="nav-item active">
+                                 <a class="btn" href="#">ABOUT <span class="sr-only">Home</span></a>
+                             </li>
+                           </ul>
+                     </div>
+                </nav>
+              <br /><br />
+              <ul class="list-unstyled multi-steps" role="progressbar"  aria-valuemin="0" aria-valuetext="Step 1: select flight" aria-valuemax="7">
+                <li class="is-active" aria-current="true" aria-valuenow="1">Flights</li>
+                <li>Seats</li>
+                <li>Flight Type</li>
+                <li>Extra's</li>
+                <li>Review</li>
+                <li>Pay</li>
+                <li>Finish</li>
+              </ul>
+            </header>
+            <!-- The flights are displayed in a table within a list with radio buttons attached
+            to each row to select a flight option. Lists prove accessible and understandable
+             for users, splitting up the retreived data will also ease usability  -->
+          <main id="main" role="main">
+            <article>
+              <section>
+                <h1>List of Flights</h1>
+                <div class="jumbotron">
+                  <form id="theForm" action="selectSeat.html" method="post">
+                    <table class="table" role="table" aria-label="Departure flights">
+                      <h2><img src="images/takeoff.svg" alt="plane departure"> Departure</h2>
+                        <h3>Flights available for: <b class="dateHead">09/12/2019</b></h3>
+                            <thead class="thead-dark" role="rowgroup">
+                               <tr role="row">
+                                 <th scope="col">Deptarture</th>
+                                 <th scope="col">Arrival</th>
+                                 <th scope="col">Price</th>
+                                 <th scope="col">Select</th>
+                               </tr>
+                             </thead>
+                             <tbody>
+                              <div class="form-group">
+                               <tr tabindex="0">
+                                 <td>
+                                   <div class="radiotext">
+                                      <p>17:15 (DUB)</p>
+                                   </div>
+                                  </td>
+                                  <td>
+                                   <div class="radiotext">
+                                        <p>
+                                         18:45 (HTW)
+                                       </p>
+                                     </div>
+                                   </td>
+                                   <td>
+                                    <div>
+                                       <label for="regular"><span class="badge badge-info">£200</span></label>
+                                   </div>
+                                  </td>
+                                  <td>
+                                    <div class="radio">
+                                       <label><input type="radio" id="regular" name="optradio" checked></label>
+                                   </div>
+                                  </td>
+                               </tr>
+                               <tr tabindex="0">
+                                 <td>
+                                  <div class="radiotext">
+                                      <p>
+                                        13:15 (DUB)
+                                      </p>
+                                  </div>
+                                 </td>
+                                 <td>
+                                  <div class="radiotext">
+                                      <p>
+                                        14:45 (HTW)
+                                      </p>
+                                  </div>
+                                 </td>
+                                 <td>
+                                   <div>
+                                      <label for="regular2"><span class="badge badge-info">£200</span></label>
+                                  </div>
+                                 </td>
+                                 <td>
+                                   <div class="radio">
+                                      <label><input type="radio" id="regular2" name="optradio" checked></label>
+                                  </div>
+                                 </td>
+
+                               </tr >
+                               <tr tabindex="0">
+                                 <td>
+                                  <div class="radiotext">
+                                      <p>
+                                        19:15 (DUB)
+                                      </p>
+                                  </div>
+                                 </td>
+                                 <td>
+                                  <div class="radiotext">
+                                      <p>
+                                        20:45 (HTW)
+                                      </p>
+                                  </div>
+                                 </td>
+                                 <td>
+                                   <div>
+                                      <label for="regular3"><span class="badge badge-info">£249</span></label>
+                                  </div>
+                                 </td>
+                                 <td>
+                                   <div class="radio">
+                                      <label><input type="radio" id="regular3" name="optradio"></label>
+                                  </div>
+                                 </td>
+                               </tr>
+                             </div>
+                             </tbody>
+                           </table>
+                          <hr />
+                           <table class="table" role="table" aria-label="Return Flights">
+                              <h2><img src="images/land.svg" alt="plane arriving"> Return</h2>
+                                  <h3>Flights available for: <b class="dateHead">09/21/2019</b></h3>
+                                    <thead class="thead-dark">
+                                      <tr role="row">
+                                         <th scope="col" role="columnheader">Deptarture</th>
+                                         <th scope="col" role="columnheader">Arrival</th>
+                                         <th scope="col" role="columnheader">Price</th>
+                                         <th scope="col" role="columnheader">Select</th>
+                                       </tr>
+                                     </thead>
+                                     <tbody>
+                                       <div class="form-group">
+                                         <tr tabindex="0" role="row">
+
+                                      <td role="cell">
+                                       <div class="radiotext">
+                                           <p>17:15 (HTW)</p>
+                                       </div>
+                                      </td>
+                                    <td role="cell">
+                                     <div class="radiotext">
+                                         <p>18:45 (DUB)</p>
+                                     </div>
+                                    </td>
+                                    <td role="cell">
+                                      <div>
+                                         <label for='regular4'><span class="badge badge-info">£210</span></label>
+                                     </div>
+                                    </td>
+                                    <td role="cell">
+                                      <div class="radio">
+                                         <label><input type="radio" id='regular4' name="optradio2" checked></label>
+                                     </div>
+                                    </td>
+                                 </tr>
+                                 <tr tabindex="0" role="row">
+                                   <td role="cell">
+                                    <div class="radiotext">
+                                        <p>13:15 (HTW)</p>
+                                    </div>
+                                   </td>
+                                   <td role="cell">
+                                    <div class="radiotext">
+                                        <p>14:45 (DUB)</p>
+                                    </div>
+                                   </td>
+                                   <td role="cell">
+                                     <div>
+                                        <label for="regular5"><span class="badge badge-info">£275</span></label>
+                                    </div>
+                                   </td>
+                                   <td role="cell">
+                                     <div class="radio">
+                                        <label><input type="radio" id="regular5" name="optradio2"></label>
+                                    </div>
+                                   </td>
+                                 </tr>
+                                 <tr tabindex="0" role="row">
+                                   <td role="cell">
+                                    <div class="radiotext">
+                                        <p>19:15 (HTW)</p>
+                                    </div>
+                                   </td>
+                                   <td role="cell">
+                                    <div class="radiotext">
+                                        <p>20:45 (DUB)</p>
+                                    </div>
+                                   </td>
+                                   <td role="cell">
+                                     <div>
+                                        <label for="regular6"><span class="badge badge-info">£302</span></label>
+                                    </div>
+                                   </td>
+                                   <td role="cell">
+                                     <div class="radio">
+                                        <label><input type="radio" id="regular6" name="optradio2"></label>
+                                    </div>
+                                   </td>
+                                 </tr>
+                                  </div>
+                               </tbody>
+                             </table>
+
+                            <div class="form-group">
+                                <button type="submit" class="submit-btn" id="submit">Continue</button>
+                              </div>
+                              <div class="goback" role="link">
+                                <a href="index.html" >Go Back</a>
+                              </div>
+                              </form>
+                            </div> <!-- jumbo -->
+                          </section>
+                        </article>
+                      </main>
+                    </div> <!--container close div-->
+             <hr class="featurette-divider">
+              <footer class="container">
+                <p class="float-right"><a href="#">Back to top</a></p>
+                <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+              </footer>
+              <!-- Script Tags -->
+             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>

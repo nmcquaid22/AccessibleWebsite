@@ -1,0 +1,186 @@
+
+nav .homebtn {
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+}
+nav .homebtn {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+nav .homebtn:hover, .homebtn:focus {
+    background-size: 100% 2px;
+    color: #fff
+}
+h1 {
+  text-align: center;
+}
+label {
+  text-align: right;
+}
+@media (max-width:575px) {
+
+  label{text-align:left;}
+}
+
+.skip{
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+.skip:focus, .skip:active {
+    color: #fff;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:4px;
+    border-radius: 3px;
+    text-align:center;
+    font-size:1em;
+    z-index:999;
+}
+
+.form-group{
+  margin-bottom: 5px;
+
+}
+legend {
+  color: #3F3FAA;
+  font-size: 18px;
+}
+
+#datepicker-error, #datepicker2-error, #arrivalLocation-error, #departureLocation-error {
+  font-size: 14px;
+}
+/* Submit button style */
+.submit-btn {
+  /* display: inline-block; */
+  color: #fff;
+  background-color: #4849A3;
+  font-weight: 700;
+  padding: 14px 30px;
+  width: 100%;
+  border-radius: 30px;
+
+  margin-bottom:20px;
+
+}
+.submit-btn:hover {
+  background-color: #28295C;
+  color: white;
+  text-decoration: none;
+}
+
+.bags {
+    background-color: azure;
+    text-align: center;
+}
+.checkbox-inline {
+    padding: 10px;
+}
+.btn-group {
+  margin: auto;
+  width:50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+    .emptyDiv1 {
+        display: none !important;
+    }
+}
+.footer {
+
+	  width: 100%;
+		height:50px;
+    margin-top: -40px;
+		background-color: #343a40;
+    text-align: center;
+}
+footer, a {
+  color:#000;
+}
+legend {
+	text-align: center;
+}
+.flightType {
+	text-align: center;
+}
+/* Custom class built for the two datepicker input field.*/
+.input-res {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 85%;
+  max-width: 500px;
+  height: 40px;
+	border-style: solid;
+  border-width: thin;
+  padding: 10px 11px 11px 11px;
+  border-radius: 5px;
+  outline: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #bdbdc2;
+}
+.input-res:focus {
+  border-color: #66a8ff;
+  outline: #94C2FF auto 6px;
+}
+hr {
+  background-color: #5B5CAC;
+}
+input[type=text] {
+  border-color: black;
+}
+select.form-control{
+  border-color: black;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4D575B;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #4D575B;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #4D575B;
+}
+#departureLocation, #arrivalLocation::placeholder {
+color: #4D575B;
+}
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* displaying the borders around each of the fieldsets */
+
+/* fieldset {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+legend{
+    width:inherit;
+    padding:0 10px;
+    border-bottom:none;
+} */

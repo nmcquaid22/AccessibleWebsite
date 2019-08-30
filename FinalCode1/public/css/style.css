@@ -1,0 +1,162 @@
+.hey {
+font-size: 14pt;
+}
+/*This style contols the hover and focus style of the naviagtion buttons*/
+nav .btn {
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+}
+nav .btn {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);/* Drawing Line */
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;/* transition to move from one point to the other*/
+}
+nav .btn:hover, .btn:focus {
+    background-size: 100% 2px;
+    color: #fff
+  }
+
+.skip{
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+.skip:focus, .skip:active {
+    color: #fff;
+    /* background-color:#; */
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 3px;
+    /* border:4px solid ; */
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+body {
+  font-size: 12pt;
+  font-family: 'Montserrat bold', sans-serif;
+}
+html {
+  font-family:'Montserrat bold', sans-serif;
+}
+h1 {
+  font-size: 24pt;
+  color: #343A40;
+  text-align: center;
+}
+h2  {
+  color: #3F3FAA;
+}
+ a {
+   color: #343A40;
+ }
+
+h3 {
+  font-size: 16pt;
+  color: #343A40;
+}
+h3 .dateHead {
+  color: #3F3FAA;
+}
+.badge, badge-info {
+  /* sbackground-color: #3F3FAA; */
+  height:30px;
+  width:60px;
+  font-size: 14pt;
+}
+.jumbotron {
+  padding-top: 10px;
+  background-color: white;
+}
+
+#continue {
+  width:100%;
+  float:right;
+}
+
+.card, .card-body {
+  margin-bottom: 50px;
+}
+.submit-btn {
+	display: inline-block;
+	color: #fff;
+	background-color: #4849A3;
+	font-weight: 700;
+	padding: 14px 30px;
+	width: 100%;
+	border-radius: 30px;
+	border: none;
+  margin-top: 20px;
+}
+.submit-btn:hover {
+  background-color: #28295C;
+  color: white;
+  text-decoration: none;
+
+}
+input[type=checkbox]
+{
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  margin-right: 5px;
+  margin-left: 15px;
+}
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+ .table, #regular {
+    background:#aaa;
+    color:#000;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.table, #regular:hover {
+    background:#ccc;
+}
+
+label {
+  padding-right: 1em;
+}
+
+.cards .card {
+    border: 1px solid;
+    border-radius: 30px;
+
+}
+
+.card p {
+    max-width: 60ch;
+}
+.cards.card a:focus {
+    box-shadow: 0 0 0 0.15rem;
+
+}
+
+.cards .card:focus-within, .cards .card:hover {
+    box-shadow: 0 0 0 0.15rem #3F3FAA;
+}
+.cards.card:focus-within a:focus {
+    text-decoration: none;
+    /* color: yellow; */
+}
+.goback {
+  text-align: center;
+}
